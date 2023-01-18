@@ -7,7 +7,7 @@ namespace Sudoku.ColorSolver
     
         SudokuGrid ISudokuSolver.Solve(SudokuGrid s)
         {
-            throw new NotImplementedException();
+	        return s;
         }
     }
 }
