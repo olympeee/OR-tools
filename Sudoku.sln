@@ -18,7 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Z3Solvers", "Sudoku.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.ColorSolver", "Sudoku.ColorSolver\Sudoku.ColorSolver.csproj", "{FDE511FD-77AC-47C7-91A7-85C1470C2330}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.GeneticAlgorithm", "Sudoku.GeneticAlgorithm\Sudoku.GeneticAlgorithm.csproj", "{699C5EE9-6560-4946-BFD3-2E844192E917}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Backtracking", "Sudoku.GeneticAlgorithm\Sudoku.Backtracking.csproj", "{699C5EE9-6560-4946-BFD3-2E844192E917}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

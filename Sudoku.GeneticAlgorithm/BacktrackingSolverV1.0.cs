@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Sudoku.Shared; //Importation classes .SHARED
 
-namespace Sudoku.GeneticAlgorithm
+namespace Sudoku.Backtracking
 {
     public class BackTrackingSolverV1 : ISudokuSolver
     {
