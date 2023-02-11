@@ -38,6 +38,9 @@ namespace Sudoku.Backtracking
                 return null;
             }
         }
+
+
+
         //convertit les données de la grille de sudoku de la classe "SudokuGrid" en un tableau à deux dimensions d'entiers
         //UTILSATION D'UN TABLEAU SOUS FORMAT INT[,]
         //LE TABLEAU INT[,] RECUPERE TOUTES LES VALEURS DU SUDOKU s 

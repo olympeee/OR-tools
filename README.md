@@ -1,33 +1,73 @@
-# ECE-2022-Ing4-Finance-IA1-Gr04
-Bienvenue sur le dépôt du TP Sudoku.....
+README pour BackTrackingSolver
 
-Chaque groupe est invité à créer un [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) de ce dépôt principal muni d'un compte sur Github, et d'indiquer dans le fil de suivi de projet du groupe sur le forum son adresse. 
 
-Vous pourrez ensuite travailler de façon collaborative sur ce fork  en  [attribuant les permissions d'éditions](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository) aux autres membres du groupe, en clonant votre fork sur vos machines, par le biais de validations (commits), de push pour remonter les validations sur le server, et de pulls/tirages sur les machines locales des utilisateurs du groupe habilités sur le fork. 
+Ce code est une implémentation d'un algorithme de backtracking pour résoudre les puzzles sudoku. 
+L'implémentation fait partie de l'espace de noms Sudoku.Backtracking et implémente l'interface ISudokuSolver 
+de l'espace de noms Sudoku.Shared.
 
-Le plus simple sera d'utiliser les [outils intégrés à Github](https://docs.microsoft.com/fr-fr/visualstudio/version-control/git-with-visual-studio?view=vs-2019) directement disponible depuis l'environnement [Visual Studio](https://visualstudio.microsoft.com/fr/downloads/). Idéalement, préférez Visual Studio Community 2019 ou Visual Studio pour Mac à Visual Studio Code, qui est plus versatile, mais sans doute moins adapté à ce projet. Si vous choisissez toutefois d'utiliser Visual Studio Code, il vous faudra suivre les instructions fournies [pour la prise en charge de c#](https://code.visualstudio.com/docs/languages/csharp) ou [pour celle de .Net](https://code.visualstudio.com/docs/languages/dotnet), et sans doute installer des extensions comme [celle permettant de charger des solutions](https://marketplace.visualstudio.com/items?itemName=fernandoescolar.vscode-solution-explorer). 
+Installation de l'environnement
 
-Une fois le travail effectué et remonté sur le fork, vous pourrez créer une pull-request depuis le fork vers le dépôt principal pour fusion et évaluation.
+Fork du repository principal sur Github, 
+•Clone du fork en local.
+•Chargement de la solution existante 
+•Création d'un nouveau projet de type bibliothèque de classe ou application de console, dans la version du Framework compatible avec le tronc commun.
+•Ajout du nouveau projet Sudoku.Backtracking.
+•Définition des références à partir de Sudoku.Benchmark vers Sudoku.Backtracking•
+•Création des classes BacktrackingSolverV1 et V2 dans le nouveau projet.
+•Ajout des librairies suivantes :
 
-Le fichier de solution "Sudoku.sln" constitue l'environnement de base du travail et s'ouvre dans Visual Studio Community (attention à bien ouvrir la solution et ne pas rester en "vue de dossier").
-En l'état, la solution contient:
-- Un répertoire Puzzles contenant 3 fichiers de Sudokus de difficultés différentes
-- Un projet Sudoku.Shared: il consitue la librairie de base de l'application et fournit la définition de la classe représentant un Sudoku (SudokuGrid) et l'interface à implémenter par les solvers de sudoku (ISudokuSolver).
-- Un projet Sudoku.Z3Solvers qui fournit plusieurs exemples de solvers utilisant la librairie z3 grâce au package Nuget correspondant, et qui illustre également l'utilisation de Python depuis le langage c# via  [Python.Net](https://pythonnet.github.io/) grâce aux packages Nuget correspondants.
-- Un projet Sudoku.Benchmark de Console permettant de tester les solvers de Sudoku de façon individuels ou dans le cadre d'un Benchmark comparatif. Ce projet référence les projets de solvers, et c'est celui que vous devez lancer pour tester votre code.
+Bibliothèques importées
+Les bibliothèques suivantes sont importées dans le code :
 
-Il s'agira pour chaque groupe de travail, sur le modèle du projet z3 en exemple, de commencer par:
+System : Fait partie du cadre .NET et fournit des fonctionnalités de base telles que les tableaux, les exceptions, etc.
+System.Collections.Generic : Une bibliothèque fournissant des classes de collections telles que les listes et les dictionnaires.
+System.Linq : bibliothèque fournissant des fonctions de requête pour les tableaux et autres collections.
+System.Text : Une bibliothèque fournissant des fonctionnalités de manipulation de texte.
+System.Threading.Tasks : Une bibliothèque fournissant des fonctionnalités pour exécuter des opérations de manière asynchrone.
+Sudoku.Shared : Une bibliothèque contenant les classes utilisées dans le projet de solveur de sudoku.
 
-- [rajouter à la solution votre propre projet](https://docs.microsoft.com/fr-fr/visualstudio/get-started/tutorial-projects-solutions?view=vs-2019), typiquement une bibliothèque de classes en c# au format .Net standard 2.1,
-- munir votre projet des librairies nécessaires, sous forme de [références](https://docs.microsoft.com/fr-fr/visualstudio/ide/managing-references-in-a-project?view=vs-2019) ou de packages [Nuget](https://docs.microsoft.com/fr-fr/nuget/consume-packages/install-use-packages-visual-studio). Votre projet devrait posséder une référence vers le projet partagé contenant la définition de la classe d'une grille de Sudoku et de l'interface d'un solver de Sudoku.
-- Créer votre classe de Solver (qui n'a pas besoin d'être entièrement fonctionnelle lors de vos premiers archivages) implémentant l'interface partagée.
-- faire référencer votre projet par celui de l'application de Console Benchmark pour le rendre votre solver disponible dans le menu.
 
-Pour ce qui est du Workflow de collaboration:
+Définition des classes
+Les classes BackTrackingSolverV1 et BacktrackingSolverV2 sont définie dans l'espace de noms Sudoku.Backtracking. Elles implémentent l'interface ISudokuSolver, qui requiert l'implémentation d'une seule méthode Solve(SudokuGrid s). 
+Cette méthode prend un objet SudokuGrid comme paramètre et renvoie la version résolue de cette grille.
+La classe BacktrackingSolverV2 est une version optimisée de la classe BacktrackingSolverV1 permettant d'avoir de meilleurs resultats lors de benchmarks.
 
-- Effectuez régulièrement une validation/commit pour baliser votre travail localement,
-- puis un push pour le remonter vos validations sur votre fork et le partager avec les camarades de votre groupe, qui pourront le récupérer sur leurs propres environnements avec un tirage/pull.
-- Lorsque votre environnement est stable (la solution compile sans erreurs et les autres projets ne sont pas affectés par le vôtre), effectuez une [pull-request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)/requête de tirage vers le dépôt principal pour partager votre travail avec moi et les autres groupes, ainsi que dans l'autre sens à n'importe quel moment que pour récupérer les dernières mises à jours remontées par vos camarades sur le dépôt principal (dont je m'assurerai de la bonne stabilité). Pour effectuer et valider des pull requests dans un sens ou dans l'autre, vous pouvez utiliser l'[interface de github](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork), ou encore [celle de Visual Studio](https://visualstudio.developpez.com/actu/261500/Pull-Requests-pour-Visual-Studio-une-fonctionnalite-collaborative-devoilee-avec-Visual-Studio-2019-pour-gerer-les-demandes-de-tirage-dans-l-EDI/).
-- Vous serez invité à vous évaluer entre autre sur votre capacité à participer au projet global en partageant régulièrement votre travail et en récupérant celui partagé par les autres groupes. Tout cela sera visible dans la page Insights/Network de vôtre dépôt ou du dépôt principal.
+Méthode Solve
+La méthode Solve ou SolveBacktracking vérifie d'abord s'il y a des cellules vides dans la grille en parcourant les cellules en boucle et en vérifiant leurs valeurs. Si toutes les cellules sont remplies, la méthode renvoie true car la grille est résolue.
 
-Concernant enfin vos sujets respectifs et vos éventuelles questions spécifiques, je vous invite à utiliser le fil de discussion de votre groupe dans le forum du projet.
+S'il y a des cellules vides, la méthode commence à essayer des nombres de 1 à 9 dans chaque cellule vide. Avant d'essayer un nombre, elle appelle la méthode IsSafe pour vérifier si le nombre peut être placé dans la cellule 
+sans enfreindre les règles du sudoku. 
+Si le nombre peut être placé, la méthode s'appelle récursivement avec la grille mise à jour. Si la méthode renvoie true, la méthode courante renvoie également true, indiquant que la grille est résolue. 
+Si la méthode renvoie faux, la méthode actuelle revient en arrière en remettant la valeur de la cellule à 0 et en essayant le nombre suivant.
+
+Méthode IsSafe
+La méthode IsSafe vérifie si un nombre donné peut être placé dans une cellule donnée sans enfreindre les règles du sudoku. Elle vérifie si le nombre est déjà présent dans la même ligne, colonne ou case. 
+Elle renvoie true si tous les contrôles passent, indiquant que le nombre peut être placé dans la cellule.
+
+Méthodes UsedinRaw, UsedinCol et UsedinBox
+Ces méthodes effectuent les contrôles mentionnés dans la méthode IsSafe. 
+La méthode UsedinRaw vérifie si le numéro est déjà présent dans la même ligne, UsedinCol vérifie si le numéro est déjà présent dans la même colonne, et UsedinBox vérifie si le numéro est déjà présent dans la même case.
+
+Méthodes ConvertToArray
+
+Cette méthode "ConvertToArray" est utilisée pour convertir un objet de type "SudokuGrid" en un tableau à deux dimensions de type entier. Le tableau a une taille de 9x9, ce qui correspond à la taille d'une grille de sudoku standard.
+
+La méthode définit un tableau à deux dimensions nommé "sudoku" qui sera utilisé pour stocker les valeurs de la grille de sudoku.
+
+Ensuite, il y a une boucle à double entrée qui parcourt les lignes et les colonnes de la grille de sudoku. Pour chaque cellule, la valeur de la cellule correspondante dans l'objet "SudokuGrid" 
+est récupérée en utilisant la propriété "Cells" et stockée dans le tableau "sudoku".
+
+Enfin, le tableau "sudoku" rempli est retourné en tant que résultat de la méthode.
+
+Différences entre V1 et V2 : 
+
+La classe "BacktrackingsolverV1" est renommée en "BacktrackingsolverV2".
+L'algorithme "SolveBacktracking" a été modifié pour être plus efficace en termes de performance. (Recuperation de la grille de sudoku sous forme de 'ConvertToArray' (tableau a 2 dimensions).
+La méthode "ConvertToArray" a été ajoutée pour convertir les données de la grille de sudoku de la classe "SudokuGrid" en un tableau à deux dimensions d'entiers.
+Le code a été reformaté pour une meilleure lisibilité et une structure plus claire.
+Ces modifications visent à optimiser la vitesse et l'efficacité du code pour résoudre des grilles de sudoku.
+
+
+Conclusion
+Ce code fournit une solution optimisée pour résoudre les puzzles sudoku en utilisant l'algorithme de backtracking. En suivant les règles du sudoku et en revenant en arrière lorsque cela est nécessaire, 
+l'algorithme peut résoudre efficacement n'importe quel puzzle sudoku.
