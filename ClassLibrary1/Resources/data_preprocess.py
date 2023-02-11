@@ -104,6 +104,7 @@ def solve_sudoku(game):
     game = np.array([int(j) for j in game]).reshape((9,9,1))
     game = norm(game)
     game = inference_sudoku(game)
+    game = denorm(game)
     return game
 
 
@@ -123,4 +124,4 @@ def trainModel():
 
 
 def loadModel():
-    return keras.models.load_model('model/sudoku.model');
+    return keras.models.load_model('model/model/sudoku.model');

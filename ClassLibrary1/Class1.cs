@@ -31,7 +31,7 @@ namespace Sudoku.CNNSolver
                 int[][] sudok = s.Cells;
 
                 // convert the Person object to a PyObject
-                PyObject pySudoku = s.ToPython();
+                PyObject pySudoku = sudok.ToPython();
 
                 // create a Python variable "person"
                 scope.Set("sudoku", pySudoku);
@@ -56,7 +56,9 @@ namespace Sudoku.CNNSolver
         {
             InstallPipModule("keras");
             InstallPipModule("tensorflow");
-            
+            InstallPipModule("numpy");
+            InstallPipModule("panda");
+
             base.InitializePythonComponents();
         }
 
