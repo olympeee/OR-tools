@@ -92,7 +92,7 @@ namespace Sudoku.Backtracking
             int column = 0;
             bool isEmpty = true;
 
-            // Trouve la première cellule vide
+            // FINDER CELLULE VIDE
             for (int i = 0; i < 9; i++)
             {
                 for (int j = 0; j < 9; j++)
@@ -111,7 +111,7 @@ namespace Sudoku.Backtracking
                 }
             }
 
-            // BLINDAGE VERIF SI LE TABLEAU EST BIEN REMPLI
+            // CONDITION BOOL IS EMPTY
             if (isEmpty)
             {
                 return true;
