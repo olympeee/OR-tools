@@ -18,7 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Z3Solvers", "Sudoku.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.ColorSolver", "Sudoku.ColorSolver\Sudoku.ColorSolver.csproj", "{FDE511FD-77AC-47C7-91A7-85C1470C2330}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Backtracking", "Sudoku.GeneticAlgorithm\Sudoku.Backtracking.csproj", "{699C5EE9-6560-4946-BFD3-2E844192E917}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.Backtracking", "Sudoku.Backtracking\Sudoku.Backtracking.csproj", "{24CEBD95-ACD5-4513-87AC-FFC559F133A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,10 +42,10 @@ Global
 		{FDE511FD-77AC-47C7-91A7-85C1470C2330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDE511FD-77AC-47C7-91A7-85C1470C2330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDE511FD-77AC-47C7-91A7-85C1470C2330}.Release|Any CPU.Build.0 = Release|Any CPU
-		{699C5EE9-6560-4946-BFD3-2E844192E917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{699C5EE9-6560-4946-BFD3-2E844192E917}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{699C5EE9-6560-4946-BFD3-2E844192E917}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{699C5EE9-6560-4946-BFD3-2E844192E917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24CEBD95-ACD5-4513-87AC-FFC559F133A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24CEBD95-ACD5-4513-87AC-FFC559F133A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24CEBD95-ACD5-4513-87AC-FFC559F133A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24CEBD95-ACD5-4513-87AC-FFC559F133A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

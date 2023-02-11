@@ -20,7 +20,6 @@ namespace Sudoku.Backtracking
             }
             else
             {
-                Console.Write("Pas de solution pour le Sudoku");
                 return s;
             }
         }
@@ -32,7 +31,7 @@ namespace Sudoku.Backtracking
             bool RAWUSE = UsedinRaw(s, row, num, gridSize);
             bool COLUSE = UsedinCol(s, column, num, gridSize);
             bool BOXUSE = UsedinBox(s, row, column, num, gridSize, racine);
-            
+
             //IF 3 CONIDITONS REUNIES == OK
             return RAWUSE && COLUSE && BOXUSE;
         }
@@ -84,7 +83,7 @@ namespace Sudoku.Backtracking
         }
 
         //METHOD DE SOLVE DU SUDOKU GRID
-            private bool Solve(SudokuGrid s)
+        private bool Solve(SudokuGrid s)
         {
 
             //DECLARATION INTS ET BOOL ISEMPTY (VERIFIER SI INT PRESENT SUR LA GRID POUR MODIFIER)

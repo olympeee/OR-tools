@@ -41,7 +41,7 @@ namespace Sudoku.Backtracking
         //convertit les données de la grille de sudoku de la classe "SudokuGrid" en un tableau à deux dimensions d'entiers
         //UTILSATION D'UN TABLEAU SOUS FORMAT INT[,]
         //LE TABLEAU INT[,] RECUPERE TOUTES LES VALEURS DU SUDOKU s 
-        private int[,] ConvertToArray(SudokuGrid s)
+        private static int[,] ConvertToArray(SudokuGrid s)
         {
             int[,] sudoku = new int[9, 9];
             for (int i = 0; i < 9; i++)
