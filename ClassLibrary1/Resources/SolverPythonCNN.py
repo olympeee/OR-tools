@@ -6,7 +6,7 @@ from data_preprocess import *
 
 
    
-Sudoku = solve_sudoku(sudoku)
+Sudoku = np.asarray(solve_sudoku(sudoku))
 
     
 
