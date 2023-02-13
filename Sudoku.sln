@@ -28,6 +28,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sudoku.CNNsolver", "Sudoku.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Recuit", "Sudoku.Recuit\Sudoku.Recuit.csproj", "{43AAA83F-2BEA-4F66-8405-410DE30BAED4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.OR_tools", "Sudoku.OR_tools\Sudoku.OR_tools.csproj", "{0E3AD441-1756-44E1-943D-46267E734EE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{43AAA83F-2BEA-4F66-8405-410DE30BAED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43AAA83F-2BEA-4F66-8405-410DE30BAED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43AAA83F-2BEA-4F66-8405-410DE30BAED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E3AD441-1756-44E1-943D-46267E734EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E3AD441-1756-44E1-943D-46267E734EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E3AD441-1756-44E1-943D-46267E734EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E3AD441-1756-44E1-943D-46267E734EE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

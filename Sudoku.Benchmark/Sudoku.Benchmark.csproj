@@ -17,6 +17,7 @@
     <ProjectReference Include="..\Sudoku.Norvig\Sudoku.Norvig.csproj" />
     <ProjectReference Include="..\Sudoku.Shared\Sudoku.Shared.csproj" />
     <ProjectReference Include="..\Sudoku.Z3Solvers\Sudoku.Z3Solvers.csproj" />
+    <ProjectReference Include="..\Sudoku.OR_tools\Sudoku.OR_tools.csproj" />
   </ItemGroup>
 
 </Project>
