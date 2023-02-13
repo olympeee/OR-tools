@@ -37,8 +37,8 @@ namespace Sudoku.CNNSolver
                 scope.Set("sudoku", pySudoku);
 
                 // the person object may now be used in Python
-                string code = Resources.SolverPythonCNN;
-                scope.Exec(code);
+                //string code = Resource.SolverPythonCNN;
+                //scope.Exec(code);
                 var result = scope.Get("Sudoku");
                 var toReturn = result.As<int[][]>();
 
