@@ -136,12 +136,19 @@ namespace Sudoku.Shared
 
 
             PythonEngine.Initialize();
-            // dynamic sys = PythonEngine.ImportModule("sys");
-            // Console.WriteLine("Python version: " + sys.version);
-        }
+        
+            InstallPipModule("numpy");
+            InstallPipModule("simanneal");
+           
+        
 
 
-        public abstract Shared.SudokuGrid Solve(Shared.SudokuGrid s);
+        // dynamic sys = PythonEngine.ImportModule("sys");
+        // Console.WriteLine("Python version: " + sys.version);
+    }
+
+
+    public abstract Shared.SudokuGrid Solve(Shared.SudokuGrid s);
 
     }
 
