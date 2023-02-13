@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Sudoku.Backtracking\Sudoku.Backtracking.csproj" />
     <ProjectReference Include="..\Sudoku.ColorSolver\Sudoku.ColorSolver.csproj" />
+    <ProjectReference Include="..\Sudoku.Recuit\Sudoku.Recuit.csproj" />
     <ProjectReference Include="..\Sudoku.DemoPython\Sudoku.DemoPython.csproj" />
     <ProjectReference Include="..\Sudoku.Norvig\Sudoku.Norvig.csproj" />
     <ProjectReference Include="..\Sudoku.Shared\Sudoku.Shared.csproj" />
