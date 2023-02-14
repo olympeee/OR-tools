@@ -10,14 +10,14 @@ using Sudoku.Shared;
 
 
 
-namespace Sudoku.CNNSolver
+namespace sudoku.CNNsolver
 {
 
 
     public class CNNSolverPython : PythonSolverBase
     {
 
-        public override Shared.SudokuGrid Solve(Shared.SudokuGrid s)
+        public override SudokuGrid Solve(SudokuGrid s)
         {
             //System.Diagnostics.Debugger.Break();
 
@@ -27,17 +27,28 @@ namespace Sudoku.CNNSolver
             // create a Python scope
             using (PyModule scope = Py.CreateScope())
             {
-
+                var sudokuDB = new StreamReader(File.OpenRead(@".\Resources\model\Database\sudoku.csv"));
                 int[][] sudok = s.Cells;
+
+                Console.Write("Voulez vous charger un ancien model\n 1:oui\n 2:non je souhiate l'entrainer");
+                int choix = Console.Read();
 
                 // convert the Person object to a PyObject
                 PyObject pySudoku = sudok.ToPython();
+                PyObject choice = choix.ToPython();
+                PyObject pySudokuDB = sudokuDB.ToPython();
 
                 // create a Python variable "person"
                 scope.Set("sudoku", pySudoku);
+                scope.Set("choix", choice);
 
                 // the person object may now be used in Python
-                string code = Resources.SolverPythonCNN;
+
+                string code = Resource1.model;
+                scope.Exec(code);
+                code = Resource1.data_preprocess;
+                scope.Exec(code);
+                code = Resource1.SolverPythonCNN;
                 scope.Exec(code);
                 var result = scope.Get("Sudoku");
                 var toReturn = result.As<int[][]>();
