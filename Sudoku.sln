@@ -22,6 +22,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Norvig", "Sudoku.Nor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Backtracking", "Sudoku.Backtracking\Sudoku.Backtracking.csproj", "{24CEBD95-ACD5-4513-87AC-FFC559F133A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sudoku.HumanTechniques", "Sudoku.HumanTechniques\Sudoku.HumanTechniques.csproj", "{66960F28-C19F-4077-B091-5F0E78FD010D}"
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.DemoPython", "Sudoku.DemoPython\Sudoku.DemoPython.csproj", "{5A333D17-B724-41C5-B6DE-F011D2F2B94C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sudoku.CNNsolver", "Sudoku.CNN.solver\sudoku.CNNsolver.csproj", "{C1AB8931-FC1B-424B-89B2-7B944A199863}"
