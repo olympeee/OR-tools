@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/Sudoku.CSP.csproj": {}
+  },
+  "projects": {
+    "/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/Sudoku.CSP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/Sudoku.CSP.csproj",
+        "projectName": "Sudoku.CSP",
+        "projectPath": "/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/Sudoku.CSP.csproj",
+        "packagesPath": "/Users/bouchet/.nuget/packages/",
+        "outputPath": "/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bouchet/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/bouchet/Projects/CSP-Method/Sudoku.Shared/Sudoku.Shared.csproj": {
+                "projectPath": "/Users/bouchet/Projects/CSP-Method/Sudoku.Shared/Sudoku.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/bouchet/Projects/CSP-Method/Sudoku.Shared/Sudoku.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/bouchet/Projects/CSP-Method/Sudoku.Shared/Sudoku.Shared.csproj",
+        "projectName": "Sudoku.Shared",
+        "projectPath": "/Users/bouchet/Projects/CSP-Method/Sudoku.Shared/Sudoku.Shared.csproj",
+        "packagesPath": "/Users/bouchet/.nuget/packages/",
+        "outputPath": "/Users/bouchet/Projects/CSP-Method/Sudoku.Shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/bouchet/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Python.Deployment": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "System.Runtime.Loader": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "pythonnet": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
