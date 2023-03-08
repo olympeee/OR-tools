@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Sudoku.CNNsolver {
+namespace sudoku.CNNsolver {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Sudoku.CNNsolver {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Sudoku.CNNsolver.Resource1", typeof(Resource1).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("sudoku.CNNsolver.Resource1", typeof(Resource1).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,42 +61,110 @@ namespace Sudoku.CNNsolver {
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Byte[].
+        ///   Recherche une chaîne localisée semblable à import numpy as np
+        ///import pandas as pd
+        ///from model import get_model
+        ///from sklearn.model_selection import train_test_split
+        ///import tensorflow as tf
+        ///from tensorflow import keras
+        ///
+        ///def get_data(file): 
+        ///
+        ///    data = pd.read_csv(file)
+        ///
+        ///    feat_raw = data[&apos;quizzes&apos;]
+        ///    label_raw = data[&apos;solutions&apos;]
+        ///
+        ///    feat = []
+        ///    label = []
+        ///
+        ///    for i in feat_raw:
+        ///    
+        ///        x = np.array([int(j) for j in i]).reshape((9,9,1))
+        ///        feat.append(x)
+        ///    
+        ///    feat = np.array(feat)
+        ///    feat = feat/9
+        ///    fea [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
-        internal static byte[] data_preprocess {
+        internal static string data_preprocess {
             get {
-                object obj = ResourceManager.GetObject("data_preprocess", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("data_preprocess", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Byte[].
+        ///   Recherche une chaîne localisée semblable à import keras
+        ///from keras.layers import Activation
+        ///from keras.layers import Conv2D, BatchNormalization, Dense, Flatten, Reshape
+        ///
+        ///def get_model():
+        ///
+        ///    model = keras.models.Sequential()
+        ///
+        ///    model.add(Conv2D(64, kernel_size=(3,3), activation=&apos;relu&apos;, padding=&apos;same&apos;, input_shape=(9,9,1)))
+        ///    model.add(BatchNormalization())
+        ///    model.add(Conv2D(64, kernel_size=(3,3), activation=&apos;relu&apos;, padding=&apos;same&apos;))
+        ///    model.add(BatchNormalization())
+        ///    model.add(Conv2D(128, kernel_size=(1,1), activation=&apos;relu&apos;, [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
-        internal static byte[] model {
+        internal static string model {
             get {
-                object obj = ResourceManager.GetObject("model", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("model", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Byte[].
+        ///   Recherche une chaîne localisée semblable à import copy
+        ///import keras
+        ///import numpy as np
+        ///from model import get_model
+        ///from data_preprocess import *
+        ///
+        ///
+        ///   
+        ///Sudoku = np.asarray(solve_sudoku(sudoku))
+        ///
+        ///    
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///.
         /// </summary>
-        internal static byte[] SolverPythonCNN {
+        internal static string SolverPythonCNN {
             get {
-                object obj = ResourceManager.GetObject("SolverPythonCNN", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("SolverPythonCNN", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une ressource localisée de type System.Byte[].
+        ///   Recherche une chaîne localisée semblable à import copy
+        ///import keras
+        ///import numpy as np
+        ///from model import get_model
+        ///from data_preprocess import *
+        ///
+        ///
+        ///   
+        ///Sudoku = np.asarray(solve_sudoku(sudoku))
+        ///
+        ///    
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///
+        ///.
         /// </summary>
-        internal static byte[] sudoku_model {
+        internal static string sudoku_model {
             get {
-                object obj = ResourceManager.GetObject("sudoku.model", resourceCulture);
-                return ((byte[])(obj));
+                return ResourceManager.GetString("sudoku.model", resourceCulture);
             }
         }
     }
