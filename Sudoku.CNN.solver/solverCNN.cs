@@ -30,7 +30,7 @@ namespace sudoku.CNNsolver
                 var sudokuDB = new StreamReader(File.OpenRead(@".\Resources\model\Database\sudoku.csv"));
                 int[][] sudok = s.Cells;
 
-                Console.Write("Voulez vous charger un ancien model\n 1:oui\n 2:non je souhiate l'entrainer");
+                Console.Write("Voulez vous charger un ancien model\n 1:oui\n 2:non je souhaite l'entrainer");
                 int choix = Console.Read();
 
                 // convert the Person object to a PyObject
@@ -41,6 +41,7 @@ namespace sudoku.CNNsolver
                 // create a Python variable "person"
                 scope.Set("sudoku", pySudoku);
                 scope.Set("choix", choice);
+                scope.Set("sudokuDB", pySudokuDB);
 
                 // the person object may now be used in Python
 
