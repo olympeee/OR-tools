@@ -26,7 +26,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.HumanTechniques", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.DemoPython", "Sudoku.DemoPython\Sudoku.DemoPython.csproj", "{5A333D17-B724-41C5-B6DE-F011D2F2B94C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sudoku.CNNsolver", "Sudoku.CNN.solver\sudoku.CNNsolver.csproj", "{C1AB8931-FC1B-424B-89B2-7B944A199863}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.CNNsolver", "Sudoku.CNN.solver\Sudoku.CNNsolver.csproj", "{C1AB8931-FC1B-424B-89B2-7B944A199863}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Recuit", "Sudoku.Recuit\Sudoku.Recuit.csproj", "{43AAA83F-2BEA-4F66-8405-410DE30BAED4}"
 EndProject
