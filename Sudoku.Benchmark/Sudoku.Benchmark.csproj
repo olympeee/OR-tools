@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Sudoku.Backtracking\Sudoku.Backtracking.csproj" />
+    <ProjectReference Include="..\Sudoku.CNN.solver\Sudoku.CNNsolver.csproj" />
     <ProjectReference Include="..\Sudoku.ColorSolver\Sudoku.ColorSolver.csproj" />
     <ProjectReference Include="..\Sudoku.HumanTechniques\Sudoku.HumanTechniques.csproj" />
     <ProjectReference Include="..\Sudoku.GeneticAlgorithm\Sudoku.GeneticAlgorithm.csproj" />
