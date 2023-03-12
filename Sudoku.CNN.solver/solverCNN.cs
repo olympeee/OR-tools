@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.Metrics;
+using System.IO;
 using System.Linq;
 using System.Resources;
 using System.Text;
@@ -36,14 +37,14 @@ namespace sudoku.CNNsolver
                 //donner la DB et le model en tant que variable (le model en tabbleau de byte et chercher sur keras comment recup avec le model en donnant le model directement)
 
 
-                
+
                 // convert the Person object to a PyObject
                 PyObject pySudoku = sudok.ToPython();
                 Console.Write("Voulez vous charger un ancien model\n 1:oui\n 2:non je souhaite l'entrainer");
                 int choix = Console.Read();
 
                 // convert the Person object to a PyObject
-               
+
                 PyObject choice = choix.ToPython();
 
                 PyObject pySudokuDB = sudokuDB.ToPython();
@@ -93,4 +94,5 @@ namespace sudoku.CNNsolver
     }
 
 
+}
 }
