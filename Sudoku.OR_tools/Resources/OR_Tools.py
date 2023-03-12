@@ -3,17 +3,17 @@ import math
 import numpy as np
 from ortools.sat.python import cp_model
 
-instance=     [[9, 0, 2, 0, 0, 5, 4, 0, 3],
-               [1, 0, 0, 0, 6, 3, 0, 2, 5],
-               [5, 0, 8, 4, 0, 7, 0, 6, 0],
-               [0, 2, 6, 3, 0, 9, 0, 0, 1],
-               [0, 5, 7, 0, 1, 0, 2, 9, 0],
-               [0, 9, 0, 6, 7, 0, 5, 3, 0],
-               [2, 4, 0, 5, 3, 0, 6, 0, 0],
-               [7, 0, 5, 2, 0, 0, 3, 0, 4],
-               [0, 8, 0, 0, 4, 1, 9, 5, 0]]
+#instance=     [[9, 0, 2, 0, 0, 5, 4, 0, 3],
+#               [1, 0, 0, 0, 6, 3, 0, 2, 5],
+#               [5, 0, 8, 4, 0, 7, 0, 6, 0],
+#               [0, 2, 6, 3, 0, 9, 0, 0, 1],
+#               [0, 5, 7, 0, 1, 0, 2, 9, 0],
+#               [0, 9, 0, 6, 7, 0, 5, 3, 0],
+#               [2, 4, 0, 5, 3, 0, 6, 0, 0],
+#               [7, 0, 5, 2, 0, 0, 3, 0, 4],
+#               [0, 8, 0, 0, 4, 1, 9, 5, 0]]
 
-r=instance
+#r=instance
 
 def solve_sudoku(grid):
     model = cp_model.CpModel()
@@ -54,11 +54,13 @@ def solve_sudoku(grid):
     else:
         return None
 
-solution = solve_sudoku(grid)
+solution = solve_sudoku(instance)
 if solution is not None:
     for row in solution:
         print(row)
 else:
     print("No solution found.")
+    
+r=asNetArray(solution)
 
 

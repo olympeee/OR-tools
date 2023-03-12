@@ -142,8 +142,15 @@ namespace Sudoku.Shared
         // Console.WriteLine("Python version: " + sys.version);
     }
 
+        protected void AddNumpyConverterScript(PyModule scope)
+        {
 
-    public abstract Shared.SudokuGrid Solve(Shared.SudokuGrid s);
+	        string numpyConverterCode = Resources.numpy_converter_py;
+	        scope.Exec(numpyConverterCode);
+
+        }
+
+		public abstract Shared.SudokuGrid Solve(Shared.SudokuGrid s);
 
     }
 
