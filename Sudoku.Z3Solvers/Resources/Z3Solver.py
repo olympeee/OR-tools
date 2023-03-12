@@ -1,4 +1,4 @@
-﻿import z3
+import z3
 from z3 import *
 
 # 9x9 matrix of integer variables
@@ -45,6 +45,7 @@ if s.check() == sat:
     m = s.model()
     r = [ [ m.evaluate(X[i][j]).as_long() for j in range(9) ]
           for i in range(9) ]
-    #print_matrix(r)
+    print("KKKKKKKKKKKKKKKKKKKK")
 else:
     print("failed to solve")
+
