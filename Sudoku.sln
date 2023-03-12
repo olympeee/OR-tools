@@ -22,17 +22,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Norvig", "Sudoku.Nor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Backtracking", "Sudoku.Backtracking\Sudoku.Backtracking.csproj", "{24CEBD95-ACD5-4513-87AC-FFC559F133A7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.HumanTechniques", "Sudoku.HumanTechniques\Sudoku.HumanTechniques.csproj", "{66960F28-C19F-4077-B091-5F0E78FD010D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.DemoPython", "Sudoku.DemoPython\Sudoku.DemoPython.csproj", "{5A333D17-B724-41C5-B6DE-F011D2F2B94C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.CNNsolver", "Sudoku.CNN.solver\Sudoku.CNNsolver.csproj", "{C1AB8931-FC1B-424B-89B2-7B944A199863}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sudoku.CNNsolver", "Sudoku.CNN.solver\sudoku.CNNsolver.csproj", "{C1AB8931-FC1B-424B-89B2-7B944A199863}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.Recuit", "Sudoku.Recuit\Sudoku.Recuit.csproj", "{43AAA83F-2BEA-4F66-8405-410DE30BAED4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.OR_tools", "Sudoku.OR_tools\Sudoku.OR_tools.csproj", "{0E3AD441-1756-44E1-943D-46267E734EE0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.GeneticAlgorithm", "Sudoku.GeneticAlgorithm\Sudoku.GeneticAlgorithm.csproj", "{372991E5-7BC2-486D-94C3-25F362CE9396}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sudoku.HumanTechniques", "Sudoku.HumanTechniques\Sudoku.HumanTechniques.csproj", "{4A8DB5E0-903D-489B-90DB-877312A49964}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,10 +64,6 @@ Global
 		{24CEBD95-ACD5-4513-87AC-FFC559F133A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24CEBD95-ACD5-4513-87AC-FFC559F133A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24CEBD95-ACD5-4513-87AC-FFC559F133A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66960F28-C19F-4077-B091-5F0E78FD010D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66960F28-C19F-4077-B091-5F0E78FD010D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66960F28-C19F-4077-B091-5F0E78FD010D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66960F28-C19F-4077-B091-5F0E78FD010D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5A333D17-B724-41C5-B6DE-F011D2F2B94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A333D17-B724-41C5-B6DE-F011D2F2B94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A333D17-B724-41C5-B6DE-F011D2F2B94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -88,6 +84,10 @@ Global
 		{372991E5-7BC2-486D-94C3-25F362CE9396}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{372991E5-7BC2-486D-94C3-25F362CE9396}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{372991E5-7BC2-486D-94C3-25F362CE9396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A8DB5E0-903D-489B-90DB-877312A49964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8DB5E0-903D-489B-90DB-877312A49964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8DB5E0-903D-489B-90DB-877312A49964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8DB5E0-903D-489B-90DB-877312A49964}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
