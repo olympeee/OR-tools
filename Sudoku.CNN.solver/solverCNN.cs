@@ -7,7 +7,6 @@ using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
 using Python.Runtime;
-using Sudoku.CNNsolver;
 using Sudoku.Shared;
 
 
@@ -95,4 +94,4 @@ namespace sudoku.CNNsolver
 
 
 }
-}
+
