@@ -1,0 +1,15 @@
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/bin/Debug/net7.0/Sudoku.CSP.deps.json
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/bin/Debug/net7.0/Sudoku.CSP.dll
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/bin/Debug/net7.0/Sudoku.CSP.pdb
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/bin/Debug/net7.0/Sudoku.Shared.dll
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/bin/Debug/net7.0/Sudoku.Shared.pdb
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/obj/Debug/net7.0/Sudoku.CSP.csproj.AssemblyReference.cache
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/obj/Debug/net7.0/Sudoku.CSP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/obj/Debug/net7.0/Sudoku.CSP.AssemblyInfoInputs.cache
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/obj/Debug/net7.0/Sudoku.CSP.AssemblyInfo.cs
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/obj/Debug/net7.0/Sudoku.CSP.csproj.CoreCompileInputs.cache
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/obj/Debug/net7.0/Sudoku.CSP.csproj.CopyComplete
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/obj/Debug/net7.0/Sudoku.CSP.dll
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/obj/Debug/net7.0/refint/Sudoku.CSP.dll
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/obj/Debug/net7.0/Sudoku.CSP.pdb
+/Users/bouchet/Projects/CSP-Method/Sudoku.CSP/obj/Debug/net7.0/ref/Sudoku.CSP.dll

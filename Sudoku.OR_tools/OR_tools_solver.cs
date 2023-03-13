@@ -22,11 +22,14 @@ public class ORtoolssolver : PythonSolverBase
                 // create a Python variable "person"
                 scope.Set("instance", pyCells);
 
+
+				this.AddNumpyConverterScript(scope);
+				
                 // the person object may now be used in Python
                 string code = Resources.OR_Tools_py;
                 scope.Exec(code);
                 var result = scope.Get("r");
-                var managedResult = result.As<int[][]>();
+                var managedResult = result.As<int[,]>().ToJaggedArray();
                 //var convertesdResult = managedResult.Select(objList => objList.Select(o => (int)o).ToArray()).ToArray();
                 return new Shared.SudokuGrid() { Cells = managedResult };
             }

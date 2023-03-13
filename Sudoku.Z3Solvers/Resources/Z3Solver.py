@@ -45,7 +45,6 @@ if s.check() == sat:
     m = s.model()
     r = [ [ m.evaluate(X[i][j]).as_long() for j in range(9) ]
           for i in range(9) ]
-    print("KKKKKKKKKKKKKKKKKKKK")
 else:
     print("failed to solve")
 
